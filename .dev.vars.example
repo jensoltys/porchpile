@@ -1,0 +1,19 @@
+# Copy to .dev.vars for local dev. Never commit .dev.vars.
+#
+# REQUIRED: replace CHANGE_ME below with 32 or more random characters.
+# Make one with:  openssl rand -hex 32
+# Until you do, signup and login answer "Server isn't set up".
+PP_SESSION_SECRET=CHANGE_ME
+# Your local address. The app only accepts form posts from APP_URL, so this
+# overrides the live address in wrangler.toml while you test on your machine.
+APP_URL=http://localhost:8787
+# Local testing without email: prints signup codes in your terminal.
+DEV_LOG_CODES=true
+RESEND_API_KEY=
+TURNSTILE_SECRET=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+ALERT_TOKEN=
+CONVERSION_WEBHOOK_SECRET=
+SIGNUP_WEBHOOK_SECRET=
+COMP_SECRET=
